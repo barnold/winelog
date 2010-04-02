@@ -1,7 +1,7 @@
 <% title "Wine" %>
 
 <p>
-  #<%=h @wine.batch_number %>
+  <strong>#</strong> <%=h @wine.batch_number %>
   <strong>Name:</strong>: <%=h @wine.name %>
 </p>
 <p>
