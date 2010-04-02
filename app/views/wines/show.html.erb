@@ -1,0 +1,20 @@
+<% title "Wine" %>
+
+<p>
+  <strong>Batch Number:</strong>
+  <%=h @wine.batch_number %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%=h @wine.name %>
+</p>
+<p>
+  <strong>Started:</strong>
+  <%=h @wine.started %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_wine_path(@wine) %> |
+  <%= link_to "Destroy", @wine, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", wines_path %>
+</p>

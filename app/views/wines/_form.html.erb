@@ -1,0 +1,16 @@
+<% form_for @wine do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :batch_number %><br />
+    <%= f.text_field :batch_number %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :started %><br />
+    <%= f.datetime_select :started %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

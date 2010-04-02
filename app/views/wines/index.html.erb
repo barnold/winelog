@@ -1,0 +1,21 @@
+<% title "Wines" %>
+
+<table>
+  <tr>
+    <th>Batch Number</th>
+    <th>Name</th>
+    <th>Started</th>
+  </tr>
+  <% for wine in @wines %>
+    <tr>
+      <td><%=h wine.batch_number %></td>
+      <td><%=h wine.name %></td>
+      <td><%=h wine.started %></td>
+      <td><%= link_to "Show", wine %></td>
+      <td><%= link_to "Edit", edit_wine_path(wine) %></td>
+      <td><%= link_to "Destroy", wine, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Wine", new_wine_path %></p>
