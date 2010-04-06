@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100402171216) do
+ActiveRecord::Schema.define(:version => 20100402172519) do
+
+  create_table "ingredients", :force => true do |t|
+    t.integer  "wine_id"
+    t.string   "name"
+    t.integer  "amount"
+    t.string   "amount_unit"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "wines", :force => true do |t|
     t.integer  "batch_number"

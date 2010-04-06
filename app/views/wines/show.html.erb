@@ -8,7 +8,10 @@
   <strong>Started:</strong>
   <%=h @wine.started %>
 </p>
-
+<p>
+  <strong>Ingredients:</strong>
+<%=h @wine.ingredients.count %>
+</p>  
 <p>
   <%= link_to "Edit", edit_wine_path(@wine) %> |
   <%= link_to "Destroy", @wine, :confirm => 'Are you sure?', :method => :delete %> |

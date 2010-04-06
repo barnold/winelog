@@ -8,5 +8,10 @@
     <%= f.label :started %><br />
     <%= f.datetime_select :started %>
   </p>
+  <p>
+    <% f.fields_for :ingredients do |builder| %>
+      <%= render "ingredient_fields", :f => builder %>
+    <% end %>
+  </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

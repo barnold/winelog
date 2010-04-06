@@ -1,4 +1,5 @@
 class Wine < ActiveRecord::Base
   attr_accessible :batch_number, :name, :started
-  validate_presence_of :name
+  validates_presence_of :name
+  has_many :ingredients
 end

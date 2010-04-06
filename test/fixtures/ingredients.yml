@@ -1,0 +1,11 @@
+one:
+  references: 
+  name: MyString
+  amount: 1
+  amount_unit: MyString
+
+two:
+  references: 
+  name: MyString
+  amount: 1
+  amount_unit: MyString

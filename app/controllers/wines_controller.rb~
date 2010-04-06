@@ -25,7 +25,7 @@ class WinesController < ApplicationController
   def edit
     @wine = Wine.find(params[:id])
     if @wine.ingredients.count < 5
-      (5 - @wine.ingredients.count).times { @wine.ingredients.build }
+      (5 - @wine.ingedients.count).times { @wine.ingredients.build }
     end
   end
   
